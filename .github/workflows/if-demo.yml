@@ -6,7 +6,7 @@ on:
       - develop
 jobs:
   demo:
-    runs-on: Run this step
+    runs-on: ubuntu-latest
     steps:
       - name: Run this step
         if: github.ref == 'refs/heads/main'
