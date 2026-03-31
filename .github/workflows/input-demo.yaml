@@ -6,6 +6,7 @@ on:
         description: Chose the environment to deply
         required: true
         default: dev
+        type: choice
         options:
           - dev
           - test
