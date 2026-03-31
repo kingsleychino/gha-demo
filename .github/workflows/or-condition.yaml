@@ -1,0 +1,9 @@
+name: Or Condition Demo
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for Nonso or Kingsley
+        if: github.actor == 'Nonso' || github.actor == 'Kingsley'
+        run: echo "It is triggered by either Nonso of Kingsley"
