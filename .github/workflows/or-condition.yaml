@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run for Nonso or Kingsley
-        if: ${{ contains(fromJson('["Nonso", "Kingsley"]'), github.actor) }}
+        if: github.actor == 'Nonso' || github.actor == 'Kingsley'
         run: echo "It is triggered by either Nonso or Kingsley"
