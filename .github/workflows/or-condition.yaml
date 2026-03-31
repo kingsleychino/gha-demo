@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Run for Nonso or Kingsley
         if: github.actor == 'Nonso' || github.actor == 'Kingsley'
-        run: echo "It is triggered by either Nonso of Kingsley"
+        run: echo "It is triggered by either Nonso or Kingsley"
