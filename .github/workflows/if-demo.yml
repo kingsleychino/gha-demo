@@ -8,7 +8,7 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Run this step
+      - name: Run if branch is main
         if: github.ref == 'refs/heads/main'
         run: echo "Running for main branch"
       - name: Run this step
