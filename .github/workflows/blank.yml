@@ -1,5 +1,12 @@
 name: Github Action Demo
 on: push
+      branches:
+        - main
+        - develop
+        - 'release/**'
+    pull_request:
+      branches:
+        - main
 jobs:
   action-demo:
     runs-on: ubuntu-latest
