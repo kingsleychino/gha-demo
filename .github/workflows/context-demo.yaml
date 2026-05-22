@@ -12,3 +12,6 @@ jobs:
 
       - name: Print all verables under github
         run: echo "${{ toJson(github) }}"
+
+      - name: Print environment varibales
+        run: printenv
