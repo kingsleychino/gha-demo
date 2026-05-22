@@ -6,6 +6,6 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Run for Kings or Chino
-        if: github.actor == 'Kings' || github.actor == 'Chino'
+      - name: Run for Kings or kingsleychino
+        if: github.actor == 'Kings' || github.actor == 'kingsleychino'
         run: echo "It is triggered by either Kings or Chino"
