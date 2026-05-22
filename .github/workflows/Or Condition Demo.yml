@@ -1,0 +1,11 @@
+name: Or Condition Demo
+on: 
+  push:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for Kings or Chino
+        if: github.actor == 'Kings' || github.actor == 'Chino'
+        run: echo "It is triggered by either Kings or Chino"
